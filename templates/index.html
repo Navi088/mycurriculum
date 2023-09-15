@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile_layout.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <!-- GENERAL -->
+
+    <div class="total_container">
+        <div class="pf_image">
+            <!-- <img src="{{ url_for('static', filename='imgs/profileimg.png') }}"> -->
+            <div class="imgn"></div>
+        </div>
+
+        <div class="main_name">
+            <h1 class="my_name">
+                Ivan Francisco Victoria Campero <br>
+                Programador Python Jr.
+            </h1>
+        </div>
+
+        <div class="main_info">
+            <div class="my_inf">
+                <p>Contacto</p>
+                <hr>
+                <div class="mi_pic"></div>
+                <div class="address">Direccion:<br> 
+                    <a href="https://www.google.com/maps/place/De+La+Bastilla+1836,+Lote+Bald%C3%ADo,+85154+Cd+Obreg%C3%B3n,+Son./@27.4752723,-109.9639492,17z/data=!3m1!4b1!4m6!3m5!1s0x86c83e07ef11a543:0x596526e799549951!8m2!3d27.4752723!4d-109.9613743!16s%2Fg%2F11ft6d54lv?entry=ttu">
+                        Calle Huamantla #1836 Col. Torre de Paris
+                    </a>
+                </div><br>
+                <div class="tel">Telefono:<br>6444-47-40-73</div><br>
+                <div class="mail">Correo electronico: <br>ivanvicttoria_8@hotmail.com</div>
+
+                <div class="personal_info">
+                    <hr>
+                    <p>Personal</p>
+                    <hr>
+                    <div class="personal">Fecha de nacimiento: <br>Julio 22 de 1992</div><br>
+                    <div class="personal">Lugar de nacimiento: <br>
+                        <a href="https://www.google.com/maps/place/Cd+Obreg%C3%B3n,+Son./@27.482803,-109.9820807,13z/data=!3m1!4b1!4m6!3m5!1s0x86c815e1cb75ffb9:0x311f38aacd3515ae!8m2!3d27.4827729!4d-109.930367!16zL20vMDQzN3J5?entry=ttu">
+                            Ciudad Obregon, Son.
+                        </a>
+                    </div><br>
+                    <div class="personal">Nacionalidad: <br>Mexicano</div><br>
+                    <div class="personal">Estado civil: <br>Casado</div>
+                </div>
+                
+                <div class="references">
+                    <hr>
+                    <p>Referencias</p>
+                    <hr>
+                    <div class="ref1">Referencia 1: <br>****-**-**-**</div><br>
+                    <div class="ref2">Referencia 2: <br>****-**-**-**</div><br>
+                </div>
+
+                <div class="languages">
+                    <hr>
+                    <p>Idiomas</p>
+                    <hr>
+                    <div>Español - Nativo<br>Ingles - 70%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LISTA DE CURSOS ACREDITADOS -->
+        <div class="courses_container">
+            <div class="knw_container">
+                
+                <div class="course1">
+                    <div class="img_c1">
+                        <div class="py_img"></div>
+                    </div>
+                    <a href="">Python Profecional</a>
+                </div>
+
+                <div class="course2">
+                    <div class="img_c2">
+                        <div class="sql_img"></div>
+                    </div>
+                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-0be30ba5-d801-420a-ad2a-3051251d2252.pdf">BD, HTML y CSS</a>
+                </div>
+
+                <div class="course3">
+                    <p class="center" style="color: black;">Capacitacion</p>
+                    <div class="img_c3"></div>
+                </div>
+
+                <div class="course4">
+                    <div class="img_c4">
+                        <div class="scrap_img"></div>
+                    </div>
+                    <a href="">Web Scraping</a>
+                    <div class=""></div>
+                </div>
+
+                <div class="course5">
+                    <div class="img_c5">
+                        <div class="mant_img"></div>
+                    </div>
+                    <a href="">Mantenimiento</a>
+                    <div class=""></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="second_container">
+                <h4 class="experience_title">Experiencia laboral</h4>
+                
+                <div class="current_job">
+                    Empleo Actual
+                    <div class="current_img">
+                        <img class="current_job_img" src="/static/css/img/piedra.jpg" alt="">
+                        <div class="current_card">
+                            <p class="current_descript">
+                                Empresa: Piedra Cerulea<br><br>
+                                De: Noviembre del 2023 - Actualidad<br>
+                                Puesto: Capturista de datos <br><br>
+                                Descripcion: <br>
+                                Encargado de manejar y convertir los datos de su 
+                                forma original a un formato legible para la computadora.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="last_job">
+                    Empleo anterior
+                    <div class="last_img">
+                        <img class="last_job_img" src="/static/css/img/intugo.png" alt="">
+                        <div class="last_card">
+                            <p class="last_descript">
+                                Empresa: Intugo Mexico<br><br>
+                                De: Fenrero del 2019 - Octubre del 2021<br>
+                                Puesto: Agente telefonico <br><br>
+                                Descripcion: <br>
+                                Atención al cliente, brindar soporte sincrónico a través de la voz. 
+                                Con el objetivo de responder preguntas, solucionar problemas y brindar información 
+                                correcta sobre los productos o servicios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="first_job">
+                    Empleo anterior
+                    <div class="first_img">
+                        <img class="first_job_img" src="/static/css/img/bananosgym.png" alt="">
+                        <div class="first_card">
+                            <p class="first_descript">
+                                Empresa: Bananos Gym<br><br>
+                                De: Agosto del 2017 - Octubre del 2019<br>
+                                Puesto: Entrenador <br><br>
+                                Descripcion: <br>
+                                Encargado del entrenamiento físico, mental y 
+                                técnico de una persona, atleta o de un grupo de deportistas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <video muted autoplay loop src="/static/css/img/futuristic.mp4" type="video/mp4"></video>
+    <div class="capa"></div> -->
+    <video muted autoplay src="/static/css/img/futuristic.mp4" type="video/mp4"></video>
+    <div class="capa"></div>
+    <br>
+</body>
+</html>

@@ -1,0 +1,588 @@
+/* KEYFRAMES */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+body{
+    position: relative;
+}
+
+.pf_image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+
+}
+.imgn {
+    background-image: url(/static/css/img/profileimg.png);
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    border-radius:50%;
+    z-index: 2;
+}
+
+/* INFORMACION PRINCIPAL */
+.main_name {
+    grid-area: name;
+    background: rgb(0,0,0);
+    background: linear-gradient(176deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.23573179271708689) 100%);
+    color: white;
+    margin-left: -100%;
+}
+.my_name{
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.main_info {
+    grid-area: mydata;
+    color:white;
+    background: rgba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    border-radius: 10px;
+}
+.my_inf{
+    margin: 5px;
+}
+
+
+
+/* LISTA DE CURSOS */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.course1 {
+    grid-area: c1;
+    color:white;
+    background: rgba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    border-radius: 10px;
+    animation: fade-up 0.5s;
+    transition: background-color 1s ease-out 100ms
+}
+.course1:hover{
+    /* From https://css.glass */ 
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:  0 0 50px 15px #48abe0;
+}
+.img_c1{
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.py_img{
+    background-image: url(/static/css/img/python_img.png);
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    margin: auto;
+}
+
+
+
+
+.course2 {
+    grid-area: c2;
+    color:white;
+    background: rgba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    border-radius: 10px;
+    animation: fade-up 0.5s;
+    transition: background-color 1s ease-out 100ms
+}
+.course2:hover{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:  0 0 50px 15px #48abe0;
+}
+.img_c2{
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    
+}
+.sql_img{
+    background-image: url(/static/css/img/bd-html-css.png);
+    height: 70px;
+    width: 120px;
+    background-size: cover;
+    margin: auto;
+}
+
+
+
+
+.course3 {
+    grid-area: c3;
+    display: flex;
+    justify-content: center;
+}
+/* .img_c3{
+    background-image: url(/static/css/img/programacion.png);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+} */
+
+
+
+
+.course4 {
+    grid-area: c4;
+    width: 164px;
+    color:white;
+    background: rgba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    border-radius: 10px;
+    animation: fade-up 0.5s;
+    transition: background-color 1s ease-out 100ms
+}
+.course4:hover{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:  0 0 50px 15px #48abe0;
+}
+.img_c4{
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.scrap_img{
+    background-image: url(/static/css/img/scraping.png);
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    margin: auto;
+}
+
+
+
+
+.course5 {
+    grid-area: c5;
+    color:white;
+    background: rgba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    border-radius: 10px;
+    animation: fade-up 0.5s;
+    transition: background-color 1s ease-out 100ms
+}
+.course5:hover{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:  0 0 50px 15px #48abe0;
+}
+.img_c5{
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.mant_img{
+    background-image: url(/static/css/img/torre-de-pc.png);
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    margin: auto;
+}
+
+
+
+
+/* LISTA DE TRANAJOS */
+.experience_title{
+    grid-area: title;
+}
+.experience_title {
+    font-size: 32px;
+    animation: pulsate 1.5s infinite alternate;  
+}
+@keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #48abe0,
+        0 0 80px #48abe0,
+        0 0 90px #48abe0,
+        0 0 100px #48abe0,
+        0 0 150px #48abe0;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #48abe0,
+      0 0 45px #48abe0,
+      0 0 55px #48abe0,
+      0 0 70px #48abe0,
+      0 0 80px #48abe0;
+  
+  }
+}
+
+.current_job{
+    grid-area: first;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    width: 310px;
+    border-radius: 10px;
+    animation: fade-up 3s;
+}
+.current_job_img{
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+}
+.current_card{
+    margin: 10px;
+    text-align: left;
+}
+.current_descript{
+    font-size: 14px;
+}
+
+
+
+.last_job{
+    grid-area: last1;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    width: 310px;
+    border-radius: 10px;
+    animation: fade-up 5s;
+}
+.last_job_img{
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+}
+.last_card{
+    margin: 10px;
+    position: relative;
+    text-align: left;
+}
+.last_descript{
+    font-size: 14px;
+}
+
+
+
+.first_job{
+    grid-area: last2;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    width: 310px;
+    border-radius: 10px;
+    animation: fade-up 7s;
+}
+.first_job_img{
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+}
+.first_card{
+    margin: 10px;
+    position: relative;
+    text-align: left;
+}
+.first_descript{
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* CONTENEDORES */
+.courses_container{
+    grid-area: courses;
+    gap: 15px;
+}
+.knw_container {
+    margin-left: 19%;
+    margin-right: 15%;
+    height: 320px;
+    display: grid;
+    grid-template-areas:
+        '. my_courses .'
+        'c2 c1 c4'
+        'c2 c3 c4'
+        'c2 c5 c4'
+        '. . .'
+        'jobs jobs jobs';
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.second_container{
+    grid-area: jobs;
+    display: grid;
+    grid-template-areas:
+        'title title title'
+        'first last1 last2';
+    /* gap: 5px; */
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.total_container {
+    display: grid;
+    grid-template-areas:
+        'image name name name'
+        'mydata courses courses courses'
+        '. . . .';
+    gap: 10px;
+    margin: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+p{
+    font-size: 22px;
+}
+
+.center{
+    font-size: 22px;
+    color: black;
+}
+
+/* ************** RESPONSIVE 1109 PX ****************************** */
+@media(max-width: 1109px){
+    .current_job{
+        width: auto;
+    }
+    .current_job_img{
+        width: 100%;
+    }
+
+    .last_job{
+        width: auto;
+    }
+    .last_job_img{
+        width: 100%;
+    }
+    
+    
+    .first_job{
+        width: auto;
+    }
+    .first_job_img{
+        width: 100%;
+    }
+
+    .second_container{
+        grid-area: jobs;
+        margin-top: 100px;
+        display: grid;
+        grid-template-areas:
+            'title'
+            'first'
+            'last1'
+            'last2';
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* ******************* RESPONSIVE 975 px************************** */
+@media(max-width: 975px){
+    /* COURSES CONTAINER */
+    .my_name{
+        font-size: 20px;
+    }
+
+    .course3 {
+        display: none;
+    }
+
+    .course4 {
+        width: auto;
+    }
+
+
+    .knw_container {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-areas:
+            'c1'
+            'c2'
+            'c4'
+            'c5'
+            'jobs';
+        gap: 10px;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .current_job{
+        width: auto;
+    }
+    .current_job_img{
+        width: 100%;
+    }
+
+    .second_container{
+        grid-area: jobs;
+        margin-top: 100px;
+        display: grid;
+        grid-template-areas:
+            'title'
+            'first'
+            'last1'
+            'last2';
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* ******************* RESPONSIVE ************************** */
+@media(max-width: 660px){
+    /* COURSES CONTAINER */
+    .main_name {
+        grid-area: name;
+        background: rgb(0,0,0);
+        background: linear-gradient(176deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.23573179271708689) 100%);
+        color: white;
+        margin: auto;
+    }
+    .my_name{
+        text-align: center;
+        margin: auto;
+        font-size: 30px;
+    }
+
+
+    .course3 {
+        display: none;
+    }
+    .knw_container {
+        display: grid;
+        /* background-color: green; */
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-areas:
+            'c1'
+            'c2'
+            'c4'
+            'c5'
+            'jobs';
+        gap: 10px;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    /* EXPERIENCE CONTAINER */
+    .second_container{
+        grid-area: jobs;
+        /* background-color: green; */
+        display: grid;
+        grid-template-areas:
+            'title'
+            'first'
+            'last1'
+            'last2';
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    /* MAIN PERSONAL INFO */
+    .main_info {
+        grid-area: mydata;
+        color:white;
+        background: rgba(255, 255, 255, .25);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border: 1.5px solid rgba(209, 213, 219, 0.3);
+        border-radius: 10px;
+        text-align: center;
+    }
+    .my_inf{
+        margin: 5px;
+    }
+
+    /* GENERAL CONTAINER */
+    .total_container{
+        display: grid;
+        grid-template-areas:
+            'name'
+            'image'
+            'courses'
+            'mydata'
+            '.';
+        gap: 10px;
+    }
+
+    
+}
