@@ -52,6 +52,7 @@ body{
     backdrop-filter: blur(5px);
     border: 1.5px solid rgba(209, 213, 219, 0.3);
     border-radius: 10px;
+    min-width: 350px;
 }
 .my_inf{
     margin: 5px;
@@ -233,7 +234,7 @@ a {
 
 
 
-/* LISTA DE TRANAJOS */
+/* LISTA DE TRABAJOS */
 .experience_title{
     grid-area: title;
 }
@@ -380,12 +381,23 @@ a {
     align-items: center;
 }
 
+.my_descript{
+    grid-area: my_descript;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(130, 101, 150, 0.5), rgba(153, 203, 244, 0.209));
+    text-align: center;
+}
+.my_words{
+    font-size: 18px;
+    margin: 10px;
+}
 
 
 .total_container {
     display: grid;
     grid-template-areas:
         'image name name name'
+        'mydata my_descript my_descript my_descript'
         'mydata courses courses courses'
         '. . . .';
     gap: 10px;
@@ -578,6 +590,7 @@ p{
         grid-template-areas:
             'name'
             'image'
+            'my_descript'
             'courses'
             'mydata'
             '.';
