@@ -386,6 +386,7 @@ a {
     border-radius: 10px;
     background-image: linear-gradient(rgba(130, 101, 150, 0.5), rgba(153, 203, 244, 0.209));
     text-align: center;
+    animation: fade-up 1.5s;
 }
 .my_words{
     font-size: 18px;
