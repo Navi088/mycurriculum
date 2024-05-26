@@ -12,6 +12,7 @@
 
 body{
     position: relative;
+    margin: 0;
 }
 
 .pf_image {
@@ -22,6 +23,7 @@ body{
 }
 .imgn {
     background-image: url(/static/css/img/profileimg.png);
+    background-size: cover;
     height: 150px;
     width: 150px;
     background-size: cover;
@@ -42,6 +44,7 @@ body{
     margin-left: 10px;
     margin-right: 20px;
     text-align: right;
+    font-family: sans-serif;
 }
 
 .main_info {
@@ -52,10 +55,16 @@ body{
     backdrop-filter: blur(5px);
     border: 1.5px solid rgba(209, 213, 219, 0.3);
     border-radius: 10px;
-    min-width: 350px;
+    /* min-width: 350px; */
+    width: 290px;
+}
+.main_info a {
+    color: white;
+    text-decoration: underline;
 }
 .my_inf{
     margin: 5px;
+    font-family: sans-serif;
 }
 
 
@@ -68,6 +77,8 @@ a {
 
 .course1 {
     grid-area: c1;
+    width: 168.06px;
+    height: 102.67px;
     color:white;
     background: rgba(255, 255, 255, .25);
     -webkit-backdrop-filter: blur(5px);
@@ -106,6 +117,8 @@ a {
 
 .course2 {
     grid-area: c2;
+    width: 168.06px;
+    height: 102.67px;
     color:white;
     background: rgba(255, 255, 255, .25);
     -webkit-backdrop-filter: blur(5px);
@@ -144,6 +157,9 @@ a {
 
 .course3 {
     grid-area: c3;
+    width: 168.06px;
+    height: 102.67px;
+    align-items: center;
     display: flex;
     justify-content: center;
 }
@@ -159,7 +175,8 @@ a {
 
 .course4 {
     grid-area: c4;
-    width: 164px;
+    width: 168.06px;
+    height: 102.67px;
     color:white;
     background: rgba(255, 255, 255, .25);
     -webkit-backdrop-filter: blur(5px);
@@ -198,6 +215,8 @@ a {
 
 .course5 {
     grid-area: c5;
+    width: 168.06px;
+    height: 102.67px;
     color:white;
     background: rgba(255, 255, 255, .25);
     -webkit-backdrop-filter: blur(5px);
@@ -223,8 +242,8 @@ a {
     margin-bottom: 5px;
     
 }
-.mant_img{
-    background-image: url(/static/css/img/torre-de-pc.png);
+.js_img{
+    background-image: url(/static/css/img/js.png);
     height: 70px;
     width: 70px;
     background-size: cover;
@@ -240,6 +259,7 @@ a {
 }
 .experience_title {
     font-size: 32px;
+    font-family: sans-serif;
     animation: pulsate 1.5s infinite alternate;  
 }
 @keyframes pulsate {
@@ -280,6 +300,8 @@ a {
     width: 310px;
     border-radius: 10px;
     animation: fade-up 3s;
+    color: white;
+    font-family: sans-serif;
 }
 .current_job_img{
     height: 150px;
@@ -303,6 +325,8 @@ a {
     width: 310px;
     border-radius: 10px;
     animation: fade-up 5s;
+    color: white;
+    font-family: sans-serif;
 }
 .last_job_img{
     height: 150px;
@@ -327,6 +351,8 @@ a {
     width: 310px;
     border-radius: 10px;
     animation: fade-up 7s;
+    color: white;
+    font-family: sans-serif;
 }
 .first_job_img{
     height: 150px;
@@ -352,8 +378,11 @@ a {
     grid-area: courses;
     gap: 15px;
 }
+/* .testing_div {
+    color: red;
+} */
 .knw_container {
-    margin-left: 19%;
+    margin-left: 15%;
     margin-right: 15%;
     height: 320px;
     display: grid;
@@ -367,6 +396,11 @@ a {
     gap: 25px;
     align-items: center;
     text-align: center;
+    font-family: sans-serif;
+}
+.knw_container a {
+    color: white;
+    text-decoration: underline;
 }
 
 
@@ -380,6 +414,9 @@ a {
     text-align: center;
     align-items: center;
 }
+.second_container h4 {
+    color: purple;
+}
 
 .my_descript{
     grid-area: my_descript;
@@ -391,6 +428,8 @@ a {
 .my_words{
     font-size: 18px;
     margin: 10px;
+    color: white;
+    font-family: sans-serif;
 }
 
 
@@ -476,7 +515,20 @@ p{
         display: none;
     }
 
+    .course1 {
+        width: auto;
+    }
+    .course2 {
+        width: auto;
+    }
     .course4 {
+        width: auto;
+    }
+    .course5 {
+        width: auto;
+    }
+
+    .main_info {
         width: auto;
     }
 
@@ -580,6 +632,7 @@ p{
         border: 1.5px solid rgba(209, 213, 219, 0.3);
         border-radius: 10px;
         text-align: center;
+        min-width: auto;
     }
     .my_inf{
         margin: 5px;
